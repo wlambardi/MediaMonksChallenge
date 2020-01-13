@@ -32,8 +32,13 @@ export const Albums = props => {
           },
           topBar: {
             title: {
-              text: title,
+              text: 'Album',
               fontSize: 16,
+              color: '#444444',
+            },
+            subtitle: {
+              text: title,
+              fontSize: 14,
               color: '#444444',
             },
             backButton: {
