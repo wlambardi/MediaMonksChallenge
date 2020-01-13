@@ -67,7 +67,6 @@ export const Photos = props => {
                     source={{
                       uri: item.thumbnailUrl,
                     }}
-                    placeholderColor="#b3e5fc"
                   />
                 </Lightbox>
               </View>

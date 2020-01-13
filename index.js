@@ -29,7 +29,6 @@ Navigation.events().registerAppLaunchedListener(() =>
                   background: {
                     color: '#fbfbfb'
                   },
-                  statusBarStyle: 'light',
                   title: {
                     text: 'MediaMonksChallenge',
                     fontSize: 16,
