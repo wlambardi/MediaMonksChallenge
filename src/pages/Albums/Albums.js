@@ -13,11 +13,8 @@ export const Albums = props => {
   const dataSource = useSelector(state => state);
   const dispatch = useDispatch();
 
-  console.log('dataSource', JSON.stringify(dataSource.albums.loadingAlbums));
-
   useEffect(() => {
     dispatch(retrieveAlbums());
-    //console.log('props',Albums.albums);
   }, [dispatch]);
 
   showPhotos = (id, title) => {

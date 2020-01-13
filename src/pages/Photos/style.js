@@ -18,6 +18,7 @@ export default StyleSheet.create({
     color: '#fff',
     fontSize: 18,
     padding: w(5),
+    textAlign:'center',
   },
   itemContainer: {
     alignItems: 'center',

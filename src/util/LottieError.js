@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { w } from './Dimensions';
+import { w, totalSize } from './Dimensions';
 import LottieView from 'lottie-react-native';
 
 const LottieError = props => {
@@ -12,15 +12,15 @@ const LottieError = props => {
         loop={true}
         autoPlay={true}
         style={{
-          width: w(60),
-          height: w(60),
+          width: w(80),
+          height: w(80),
           backgroundColor: 'transparent',
         }}
         source={require('../../assets/lotties/ghost.json')}
       />
-      <Text style={styles.title}>Ups..</Text>
+      <Text style={styles.title}>Sorry, something went wrong.</Text>
       <Text style={styles.message}>
-        An error occurred while fetching the job{' '}
+        We're working on it and we'll get it fixed as soon as we can.
       </Text>
     </View>
   );
@@ -31,13 +31,20 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'white',
+    backgroundColor: '#FFFFFF',
   },
   title: {
-    fontSize: 25,
+    paddingTop:w(10),
+    fontSize: totalSize(2.5),
+    fontWeight:'800',
+    color:'#161616',
+    textAlign:'center',
   },
   message: {
-    fontSize: 18,
+    fontSize: totalSize(2),
+    padding:w(5),
+    color:'#161616',
+    textAlign:'center',
   },
 });
 
