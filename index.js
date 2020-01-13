@@ -33,7 +33,7 @@ Navigation.events().registerAppLaunchedListener(() =>
                   title: {
                     text: 'MediaMonksChallenge',
                     fontSize: 16,
-                    color: '#000',
+                    color: '#161616',
                     fontFamily: 'Helvetica',
                     fontWeight: 'regular', // Available on iOS only, will ignore fontFamily style and use the iOS system fonts instead. Supported weights are: 'regular', 'bold', 'thin', 'ultraLight', 'light', 'medium', 'semibold', 'heavy' and 'black'.
                     alignment: 'center'
@@ -41,7 +41,7 @@ Navigation.events().registerAppLaunchedListener(() =>
                   subtitle: {
                     text: 'Albums',
                     fontSize: 14,
-                    color: '444444',
+                    color: '#7d7d7d',
                     fontFamily: 'Helvetica',
                     fontWeight: 'regular', // Available on iOS only, will ignore fontFamily style and use the iOS system fonts instead. Supported weights are: 'regular', 'bold', 'thin', 'ultraLight', 'light', 'medium', 'semibold', 'heavy' and 'black'.
                     alignment: 'center'

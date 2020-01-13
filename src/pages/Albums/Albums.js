@@ -21,8 +21,6 @@ export const Albums = props => {
   }, [dispatch]);
 
   showPhotos = (id, title) => {
-    console.log('Album ID', id);
-    console.log('Album title', title);
     Navigation.push(props.componentId, {
       component: {
         name: pagesNames.PHOTOS,
@@ -34,12 +32,12 @@ export const Albums = props => {
             title: {
               text: 'Album',
               fontSize: 16,
-              color: '#444444',
+              color: '#161616',
             },
             subtitle: {
-              text: title,
+              text: (title.length>20 ? `${title.substr(0,20)} ...` : title),
               fontSize: 14,
-              color: '#444444',
+              color: '#7d7d7d',
             },
             backButton: {
               title: 'Back',
