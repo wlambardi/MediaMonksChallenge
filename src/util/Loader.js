@@ -16,7 +16,7 @@ const Loader = props => {
           height: w(60),
           backgroundColor: 'transparent',
         }}
-        source={require('../../assets/lotties/loader2.json')}
+        source={require('../../assets/lotties/loading3.json')}
       />
     </View>
   );

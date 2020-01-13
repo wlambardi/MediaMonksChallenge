@@ -17,6 +17,16 @@ export const Albums = props => {
     dispatch(retrieveAlbums());
   }, [dispatch]);
 
+
+  function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
   showPhotos = (id, title) => {
     Navigation.push(props.componentId, {
       component: {
@@ -70,15 +80,15 @@ export const Albums = props => {
               key={i}
               title={l.title}
               leftIcon={{
-                name: 'image',
-                type: 'font-awesome',
-                color: '#e3e3e3',
+                name: 'ios-folder',
+                type: 'ionicon',
+                color: getRandomColor(),
                 size: 35,
               }}
               bottomDivider
               rightIcon={{
-                name: 'chevron-right',
-                type: 'font-awesome',
+                name: 'ios-arrow-forward',
+                type: 'ionicon',
                 color: '#e3e3e3',
                 size: 25,
               }}

@@ -16,9 +16,9 @@ const LottieError = props => {
           height: w(80),
           backgroundColor: 'transparent',
         }}
-        source={require('../../assets/lotties/ghost.json')}
+        source={require('../../assets/lotties/error.json')}
       />
-      <Text style={styles.title}>Sorry, something went wrong.</Text>
+      <Text style={styles.title}>Oops! something went wrong.</Text>
       <Text style={styles.message}>
         We're working on it and we'll get it fixed as soon as we can.
       </Text>
