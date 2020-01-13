@@ -15,11 +15,6 @@ Navigation.events().registerAppLaunchedListener(() =>
   Navigation.setRoot({
     root: {
       stack: {
-        options: {
-          topBar: {
-            visible: false,
-          },
-        },
         children: [
           {
             component: {
@@ -29,6 +24,33 @@ Navigation.events().registerAppLaunchedListener(() =>
           {
             component: {
               name: pagesNames.ALBUMS,
+              options: {
+                topBar: {
+                  background: {
+                    color: '#fbfbfb'
+                  },
+                  statusBarStyle: 'light',
+                  title: {
+                    text: 'MediaMonksChallenge',
+                    fontSize: 16,
+                    color: '#000',
+                    fontFamily: 'Helvetica',
+                    fontWeight: 'regular', // Available on iOS only, will ignore fontFamily style and use the iOS system fonts instead. Supported weights are: 'regular', 'bold', 'thin', 'ultraLight', 'light', 'medium', 'semibold', 'heavy' and 'black'.
+                    alignment: 'center'
+                  },
+                  subtitle: {
+                    text: 'Albums',
+                    fontSize: 14,
+                    color: '444444',
+                    fontFamily: 'Helvetica',
+                    fontWeight: 'regular', // Available on iOS only, will ignore fontFamily style and use the iOS system fonts instead. Supported weights are: 'regular', 'bold', 'thin', 'ultraLight', 'light', 'medium', 'semibold', 'heavy' and 'black'.
+                    alignment: 'center'
+                  },
+                  backButton: {
+                    visible: false
+                  },
+                }
+              }
             },
           },
         ],
