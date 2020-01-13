@@ -8,4 +8,4 @@ There are no rules other than it should run (after running 'npm install') on iOS
 
 You will be judged on things like architecture, readability, animation, git usage, design, performance, third-party usage and more.
 
-![Image description](link-to-image)
+![Image description](assets/SCREENSHOTS/1.png)
