@@ -1,10 +1,16 @@
 # MediaMonksChallenge
 
+## Album
+<img src="assets/SCREENSHOTS/2.png" width="400" />
 
-<img src="assets/SCREENSHOTS/2.png" width="200" />
-<img src="assets/SCREENSHOTS/3.png" width="200" />
-<img src="assets/SCREENSHOTS/4.png" width="200" />
-<img src="assets/SCREENSHOTS/5.png" width="200" />
+## Loader
+<img src="assets/SCREENSHOTS/2.png" width="400" />
 
+## Photos
+<img src="assets/SCREENSHOTS/3.png" width="400" />
 
-| <img src="assets/SCREENSHOTS/1.png" width="200" /> | <img src="assets/SCREENSHOTS/2.png" width="200" />  | <img src="assets/SCREENSHOTS/3.png" width="200" />  | <img src="assets/SCREENSHOTS/4.png" width="200" />  | <img src="assets/SCREENSHOTS/5.png" width="200" />  |
+## Photo detail
+<img src="assets/SCREENSHOTS/4.png" width="400" />
+
+## Error handling
+<img src="assets/SCREENSHOTS/5.png" width="400" />
