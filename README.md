@@ -1,5 +1,4 @@
 # MediaMonksChallenge
-### candidate: Walter Lambardi 
 
 ## Album
 <img src="assets/SCREENSHOTS/1.png" width="400" />
