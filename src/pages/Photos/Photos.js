@@ -17,10 +17,6 @@ export const Photos = props => {
 
   useEffect(() => {
     Navigation.events().registerCommandListener((name, params) => {
-      console.log(
-        params.layout.data.passProps.item,
-        params.layout.data.passProps.title,
-      );
       dispatch(retrievePhotos(params.layout.data.passProps.item));
     });
   }, [dispatch]);
@@ -34,10 +30,10 @@ export const Photos = props => {
       return (
         <View style={styles.mainContainer}>
           <FlatGrid
-            itemDimension={w(100) / 3}
+            itemDimension={w(30)}
             items={dataSource.photos.photos}
             style={styles.gridView}
-            spacing={w(0)}
+            spacing={w(1)}
             renderItem={({ item, index }) => (
               <View style={styles.itemContainer}>
                 <Lightbox

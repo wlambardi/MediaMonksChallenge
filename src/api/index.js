@@ -14,7 +14,6 @@ export const getAlbums = () =>
       params: { timestamp: Date.now() },
     })
     .then(response => {
-      //console.log(JSON.stringify(response.data));
       return response.data;
     })
     .catch(error => {
@@ -29,7 +28,6 @@ export const getPhotos = id =>
       params: { timestamp: Date.now(), albumId: id },
     })
     .then(response => {
-      console.log('filtro id', id);
       return response.data;
     })
     .catch(error => {

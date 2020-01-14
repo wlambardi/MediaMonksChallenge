@@ -15,12 +15,10 @@ const photosActionCreators = {
 };
 
 export const retrievePhotos = id => dispatch => {
-  console.log('retrievePhotos id', id);
   dispatch(photosActionCreators.request());
   getPhotos(id)
     .then(photos => {
       dispatch(photosActionCreators.success(photos));
-      console.log('success photos');
     })
     .catch(error => dispatch(photosActionCreators.failure(error)));
 };

@@ -11,8 +11,8 @@ export default StyleSheet.create({
     flex: 1,
   },
   avatar: {
-    width: w(100) / 3,
-    height: w(100) / 3,
+    width: w(32),
+    height: w(32),
   },
   titleBox: {
     color: '#fff',
@@ -23,7 +23,6 @@ export default StyleSheet.create({
   itemContainer: {
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: w(0),
     padding: w(0),
     backgroundColor: '#FFF',
   },

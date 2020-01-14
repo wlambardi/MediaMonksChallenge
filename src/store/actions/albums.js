@@ -19,7 +19,6 @@ export const retrieveAlbums = () => dispatch => {
   getAlbums()
     .then(albums => {
       dispatch(albumsActionCreators.success(albums));
-      console.log('success albums');
     })
     .catch(error => dispatch(albumsActionCreators.failure(error)));
 };
